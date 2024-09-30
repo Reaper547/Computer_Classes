@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        input[type="text"]{
+            border: 2px soild black;
+            background-color: cornflowerblue;
+        }
+        input[type="password"]{
+            border: 2px double blue;
+            background-color: rosybrown
+        }
+        
+        ul>li {
+            color: rebeccapurple;   
+        }
+        h2 + ul{
+            font-weight: bold;
+            color:forestgreen;
+        }
+    </style>
+</head>
+<body>
+    <h2>Attribute selectors</h2>
+    <form>
+    <input type="text">
+    <input type="password">
+    </form>
+    <h2>Child selector</h2>
+    <ul>
+        <li>Hello</li>
+        <li>Back</li>
+    </ul>
+    <h2>sibling selector</h2>
+    <ul>draging</ul>
+</body>
+</html>

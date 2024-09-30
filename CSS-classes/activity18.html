@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+    <style>
+        #grade1{
+            height:100px;
+            background:linear-gradient( aqua,green)
+        }
+        #grade2{
+            height:100px;
+            background:linear-gradient(to left,orange,red)
+        }
+         #grade3{
+            height:100px;
+            background:linear-gradient(to right, white,black)
+        }
+        #grade4{
+            height:100px;
+            background:radial-gradient(pink,red,aqua,yellow)
+        }
+        div{
+            height:100px;
+            width:100px;
+            background-color: white;
+            animation-name: coal;
+            animation-duration:5s;
+        }
+        @keyframes coal{
+            0%{background-color: blanchedalmond;}
+            25%{background-color: rebeccapurple;}
+            50%{background-color:aqua;}
+            75%{background-color:brown;}
+            100%{background-color: black;}
+        }
+    </style>
+</head>
+<body>
+    <div id="grade1">Welcome to coding</div>
+    <div id="grade2">I changed the diraction</div>
+    <div id="grade3">I changed the direction again</div>
+    <div id="grade4">This is radial-gradient</div>
+</body>
+</html>
