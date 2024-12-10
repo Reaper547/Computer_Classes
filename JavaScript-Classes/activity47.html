@@ -16,5 +16,19 @@
         var newarray = numbers.map(myfunction);
         document.getElementById("product_value").innerHTML= newarray
     </script>
+    <button onclick="myfunction()">Try it</button>
+    <p id="results"></p>
+    <script>
+        function myfunction() {
+            var x=10
+            var y=20
+            var a=eval(x+y) + "<br>";
+            var b=eval(2*2) + "<br>";
+            var c=eval(y-x) + "<br>";
+
+            var res=a+b+c; 
+            document.getElementById('results').innerHTML=res;
+        }
+    </script>
 </body>
 </html>
