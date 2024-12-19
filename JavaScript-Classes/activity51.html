@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javasrcipt</title>
+    
+</head>
+<body>
+    <form name="myform"  onsubmit="validateform()">
+        Name:<input type="text" name="fname">
+        <input type="submit" value="Submit">
+        <p id="message"></p>
+    </form>
+    <script>
+        function validateform() {
+            var x = document.forms["myform"]["fname"].value;
+            if (x == "") {
+                alert("Name must be filled out first");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
